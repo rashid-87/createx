@@ -1,0 +1,77 @@
+.construk {
+  margin-bottom: 120px;
+  background: var(--Snow);
+  &__wrapper {
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+  }
+  &__title {
+    margin-bottom: 60px;
+    font-size: 46px;
+    line-height: 130%;
+    color: var(--DimGtey);
+  }
+  &__link {
+    margin: 0 0 20px 30px;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--Gray);
+    position: relative;
+  }
+  &__link::before {
+    content: url(./../img/workslid/const.svg);
+    position: absolute;
+    top: 3px;
+    left: -25px;
+    // transform: translate(-50% , -50%);
+  }
+}
+@media (max-width: 1000px) {
+  .construk {
+    margin-bottom: 80px;
+    &__title {
+      margin-bottom: 40px;
+      font-size: 38px;
+    }
+  }
+}
+@media (max-width: 875px) {
+  .construk {
+    margin-bottom: 60px;
+    &__wrapper {
+      padding-top: 50px;
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    &__img {
+      width: 100%;
+    }
+    &__title {
+      margin: 15px 0 25px 0;
+    }
+  }
+}
+@media (max-width: 616px) {
+  .construk {
+    margin-bottom: 30px;
+    &__wrapper {
+      padding-top: 30px;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .construk {
+    margin-bottom: 30px;
+    &__wrapper {
+      padding-top: 30px;
+    }
+    &__title {
+      font-size: 30px;
+    }
+    &__link {
+      font-size: 14px;
+    }
+  }
+}

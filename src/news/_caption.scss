@@ -1,0 +1,84 @@
+.caption {
+  margin: 80px 0;
+  &__title {
+    margin-bottom: 24px;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--DimGtey);
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--Gray);
+  }
+  &__dest {
+    margin: 25px 0 48px 0;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--Gray);
+  }
+  &__lead {
+    margin-left: 40px;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--DimGtey);
+    position: relative;
+  }
+  &__lead::before {
+    content: url(./../img/news/braces.svg);
+    position: absolute;
+    top: 0;
+    left: -40px;
+  }
+  &__taglin {
+    margin: 48px 0 24px 0;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--Gray);
+  }
+  &__link {
+    margin-left: 30px;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--Gray);
+    position: relative;
+  }
+  &__link::after {
+    content: url(./../img/workslid/const.svg);
+    position: absolute;
+    top: 3px;
+    left: -30px;
+  }
+  &__subtit {
+    margin: 24px 0 63px 0;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--Gray);
+  }
+  &__icon {
+    display: flex;
+    align-items: center;
+  }
+}
+@media (max-width: 830px) {
+  .caption {
+    margin: 50px 0;
+    &__subtit {
+      margin: 24px 0 40px 0;
+    }
+  }
+}
+@media (max-width: 830px) {
+  .caption {
+    margin: 40px 0;
+    &__dest {
+      margin: 25px 0 30px 0;
+    }
+    &__taglin {
+      margin: 25px 0 30px 0;
+    }
+    &__subtit {
+      margin: 24px 0 30px 0;
+    }
+  }
+}

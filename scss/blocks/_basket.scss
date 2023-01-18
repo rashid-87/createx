@@ -1,0 +1,132 @@
+.basket {
+  padding: 60px 0 40px 0;
+  background: var(--Snow);
+  &__title {
+    text-align: center;
+    font-size: 46px;
+    line-height: 130%;
+    color: var(--DimGtey);
+  }
+  &__slogan {
+    margin: 24px 0 60px 0;
+    text-align: center;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--DarkGray);
+  }
+  &__card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  &__items {
+    width: 270px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 4px;
+    background: var(--White);
+  }
+  &__items:hover {
+    background-image: url(../img/basket/image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: var(--White);
+  }
+  &__desc {
+    margin-top: 24px;
+  }
+  &__futer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 0;
+    column-gap: 40px;
+    flex-wrap: wrap;
+  }
+  &__export {
+    font-size: 28px;
+    line-height: 150%;
+    color: var(--DimGtey);
+  }
+  &__btn {
+    padding: 0 40px;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    line-height: 52px;
+    border: none;
+    color: var(--White);
+    background: var(--Primapy);
+    transition: 1s;
+  }
+  &__btn:hover {
+    transform: translateY(+5px);
+    box-shadow: 2px 4px 5px 5px silver;
+    transition: 1s;
+  }
+}
+@media (max-width: 870px) {
+  .basket {
+    padding: 30px 0;
+    &__title {
+      font-size: 35px;
+    }
+    &__slogan {
+      font-size: 16px;
+    }
+    &__futer {
+      margin: 60px 0;
+    }
+  }
+}
+@media (max-width: 832px) {
+  .basket {
+    padding: 20px 0;
+    &__title {
+      font-size: 25px;
+    }
+    &__slogan {
+      font-size: 14px;
+    }
+    &__export {
+      font-size: 25px;
+    }
+  }
+}
+@media (max-width: 608px) {
+  .basket {
+    &__futer {
+      margin: 40px 0;
+    }
+    &__btn {
+      margin-top: 20px;
+    }
+  }
+}
+
+@media (max-width: 584px) {
+  .basket {
+    &__items {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 394px) {
+  .basket {
+    &__export {
+      font-size: 20px;
+    }
+    &__btn {
+      font-size: 14px;
+      line-height: 40px;
+      width: 100%;
+    }
+  }
+}

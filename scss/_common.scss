@@ -1,0 +1,50 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+img {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", "Lato", sans-serif;
+}
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.container-centor {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+:root {
+  --White: #ffffff;
+  --Primapy: #ff5a30;
+  --Gray: #424551;
+  --DarkGray: #787a80;
+  --DimGtey: #1e212c;
+  --SlateGray: #9a9ca5;
+  --Snow: #f4f5f7;
+  --Azure: #d7dadd;
+}

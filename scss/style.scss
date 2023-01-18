@@ -1,0 +1,25 @@
+@import "common";
+@import "./blocks/header";
+@import "./blocks/info";
+@import "./blocks/video";
+@import "./blocks/aside";
+@import "./blocks/search";
+@import "./blocks/basket";
+@import "./blocks/slider";
+@import "./blocks/inner";
+@import "./blocks/paginat";
+@import "./blocks/content";
+@import "./blocks/sidebar";
+@import "./blocks/footer";
+
+@import "../src/about/headeru";
+@import "../src/about/about";
+@import "../src/about/about.scss";
+@import "../src/about/supcess";
+@import "../src/about/modal";
+@import "../src/about/modalka";
+@import "../src/about/iconi";
+
+@import "../src/services/headers";
+@import "../src/work/work.scss";
+@import "../src/news/news.scss";

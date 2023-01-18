@@ -1,0 +1,112 @@
+.sidebar {
+  background-image: url(../img/sidebar/futer.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+
+  &__wrapper {
+    padding: 50px 0;
+    .form {
+      background-color: var(--White);
+      padding: 25px 40px;
+      display: inline-block;
+      max-width: 495px;
+      display: flex;
+      flex-direction: column;
+      margin-left: auto;
+      width: 100%;
+      &__text {
+        font-size: 28px;
+        line-height: 150%;
+        color: var(--DimGtey);
+        text-align: center;
+      }
+      &__item {
+        margin: 8px 0 20px 0;
+        font-size: 14px;
+        line-height: 150%;
+        color: var(--Gray);
+      }
+      &__message {
+        resize: none;
+        font-size: 14px;
+      }
+      &__name {
+        width: 100%;
+        padding: 12px 0 12px 16px;
+        border-radius: 4px;
+        background: var(--Snow);
+        border: solid 1px var(--Azure);
+      }
+      &__name:invalid {
+        border-bottom: solid 1px red;
+        color: red;
+      }
+      &__check {
+        margin-left: 23px;
+        font-size: 14px;
+        line-height: 150%;
+        color: var(--Gray);
+      }
+      &__wrap {
+        margin-top: 10px;
+        position: relative;
+      }
+      &__checkbox {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+      }
+      &__style {
+        width: 16px;
+        height: 16px;
+        background: var(--Primapy);
+        border-radius: 4px;
+        position: absolute;
+      }
+      .form__checkbox:checked + .form__style::before {
+        content: url(./../img/sidebar/check.svg);
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        top: 45%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+      }
+      &__btn {
+        display: inline-block;
+        font-size: 14px;
+        line-height: 44px;
+        border: none;
+        border-radius: 4px;
+        background: none;
+        color: var(--White);
+        padding: 0 32px;
+        background: var(--Primapy);
+        cursor: pointer;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+@media (max-width: 406px) {
+  .sidebar {
+    .form {
+      padding: 15px 20px;
+    }
+    .form__text {
+      font-size: 20px;
+    }
+    .form__btn {
+      margin: 10px 0 0 0;
+      width: 100%;
+      line-height: 35px;
+    }
+    .form__check {
+      font-size: 12px;
+    }
+  }
+}
